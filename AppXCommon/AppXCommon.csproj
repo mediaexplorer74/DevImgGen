@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\re\dig\AppXCommon.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E7E6B4D-14F7-4C2C-9BD4-AFFAC01620FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AppXCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.ImagingTools.AppX</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PkgToolBox">
+      <HintPath>lib\PkgToolBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="ToolsCommon">
+      <HintPath>lib\ToolsCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppxInfo.cs" />
+    <Compile Include="AppxInfoManager.cs" />
+    <Compile Include="APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE.cs" />
+    <Compile Include="APPX_PACKAGE_ARCHITECTURE.cs" />
+    <Compile Include="APPX_PACKAGE_ARCHITECTURE2.cs" />
+    <Compile Include="APPX_BUNDLE_FOOTPRINT_FILE_TYPE.cs" />
+    <Compile Include="DX_FEATURE_LEVEL.cs" />
+    <Compile Include="APPX_FOOTPRINT_FILE_TYPE.cs" />
+    <Compile Include="APPX_CAPABILITY_CLASS_TYPE.cs" />
+    <Compile Include="AppxFactory.cs" />
+    <Compile Include="IAppxFilesEnumerator.cs" />
+    <Compile Include="IAppxManifestPackageDependenciesEnumerator.cs" />
+    <Compile Include="IAppxManifestCapabilitiesEnumerator.cs" />
+    <Compile Include="IAppxManifestPackageDependency.cs" />
+    <Compile Include="IAppxBundleFactory.cs" />
+    <Compile Include="AppxBundleFactory.cs" />
+    <Compile Include="IAppxFactory.cs" />
+    <Compile Include="IAppxBundleReader.cs" />
+    <Compile Include="IAppxBundleManifestReader.cs" />
+    <Compile Include="IAppxBundleManifestReader2.cs" />
+    <Compile Include="IAppxBundleManifestPackageInfo.cs" />
+    <Compile Include="IAppxBundleManifestPackageInfo2.cs" />
+    <Compile Include="IAppxBundleManifestPackageInfo3.cs" />
+    <Compile Include="IAppxBundleManifestPackageInfo4.cs" />
+    <Compile Include="IAppxBundleManifestOptionalBundleInfo.cs" />
+    <Compile Include="IAppxManifestMainPackageDependency.cs" />
+    <Compile Include="IAppxBundleManifestPackageInfoEnumerator.cs" />
+    <Compile Include="IAppxBundleManifestOptionalBundleInfoEnumerator.cs" />
+    <Compile Include="IAppxManifestMainPackageDependenciesEnumerator.cs" />
+    <Compile Include="IAppxPackageReader.cs" />
+    <Compile Include="IAppxManifestReader.cs" />
+    <Compile Include="IAppxManifestReader2.cs" />
+    <Compile Include="IAppxManifestReader3.cs" />
+    <Compile Include="IAppxManifestReader5.cs" />
+    <Compile Include="IAppxManifestPackageId.cs" />
+    <Compile Include="IAppxManifestPackageId2.cs" />
+    <Compile Include="IAppxFile.cs" />
+    <Compile Include="IAppxManifestProperties.cs" />
+    <Compile Include="IAppxManifestResourcesEnumerator.cs" />
+    <Compile Include="IAppxManifestQualifiedResourcesEnumerator.cs" />
+    <Compile Include="IAppxManifestQualifiedResource.cs" />
+    <Compile Include="IAppxBlockMapFile.cs" />
+    <Compile Include="IAppxBlockMapReader.cs" />
+    <Compile Include="PACKAGE_ID.cs" />
+    <Compile Include="IAppxBlockMapFilesEnumerator.cs" />
+    <Compile Include="APPX_CAPABILITIES.cs" />
+    <Compile Include="APPX_COMPRESSION_OPTION.cs" />
+    <Compile Include="APPX_PACKAGE_SETTINGS.cs" />
+    <Compile Include="IAppxPackageWriter.cs" />
+    <Compile Include="IAppxManifestDeviceCapabilitiesEnumerator.cs" />
+    <Compile Include="IAppxManifestApplicationsEnumerator.cs" />
+    <Compile Include="IAppxBundleWriter.cs" />
+    <Compile Include="IUri.cs" />
+    <Compile Include="IAppxBlockMapBlocksEnumerator.cs" />
+    <Compile Include="IAppxManifestTargetDeviceFamiliesEnumerator.cs" />
+    <Compile Include="SetupPhase.cs" />
+    <Compile Include="AppXComObject`1.cs" />
+    <Compile Include="AppxUtils.cs" />
+    <Compile Include="STGM.cs" />
+    <Compile Include="RegSAM.cs" />
+    <Compile Include="SymbolicLink.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
