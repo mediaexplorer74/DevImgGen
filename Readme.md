@@ -3,7 +3,8 @@
 Windows Device Image Generator (MiniKit 1.7 codename)
 
 ## My 2 cents
-R.E. of devimggen.exe + diglob.dll
+- R.E. of devimggen.exe 
+- R.E. of diglib.dll
 
 ## Screenshot(s)
 ![](Images/shot1.png)
