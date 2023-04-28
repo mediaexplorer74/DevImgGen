@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\re\dig\DigLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9C246A5-C838-488B-8AE0-A336EFD8C8A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DigLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>2021.1.31.1000</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DigLib</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PkgComposition">
+      <HintPath>lib\PkgComposition.dll</HintPath>
+    </Reference>
+    <Reference Include="PkgToolBox">
+      <HintPath>lib\PkgToolBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DriverCandidate.cs" />
+    <Compile Include="DriverOverlap.cs" />
+    <Compile Include="DriverPrep.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="DriverStore\NativeMethods.cs" />
+    <Compile Include="DriverStore\ProcessorArchitecture.cs" />
+    <Compile Include="DriverStore\DriverFile.cs" />
+    <Compile Include="DriverStore\DriverPackageVersionInfo.cs" />
+    <Compile Include="DriverStore\DriverOsVersion.cs" />
+    <Compile Include="DriverStore\DriverVersion.cs" />
+    <Compile Include="DriverStore\DriverInfo.cs" />
+    <Compile Include="DriverStore\DriverStoreDriverPackageInfo.cs" />
+    <Compile Include="DriverStore\DriverPackageEnumFilesFlags.cs" />
+    <Compile Include="DriverStore\DriverPackageOpenFlags.cs" />
+    <Compile Include="DriverStore\DriverFileOperation.cs" />
+    <Compile Include="DriverStore\DriverFileType.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
